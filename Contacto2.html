@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Formulario
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Marca</label><label class="validation-error hide" id="fullNameValidationError">Es requerido.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Modelo</label class="validation-error hide" id="fullNameValidationError">Es requerido.</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Número</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Descripción</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Registrar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Número</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

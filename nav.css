@@ -1,0 +1,46 @@
+a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover{
+	color: gray;
+}
+
+header, section, nav, article{/*seleccionar varios estilos*/
+	display: block;/*elementos uno debajo del otro*/
+}
+
+.menu{
+	background-color: #444;
+	padding: 5px 15px;/*relleno de espacion hacia dentro eje x, y*/
+	text-align: left;
+}
+
+.menu li{/*todos los li dentro de menu*/
+	list-style: none;/*estilo de lista ninguno*/
+	padding: 5px;
+	font: bold 14px;
+	display: inline-block;/*elementos en bloque uno al lado del otro*/
+}
+
+
+/* End */
+
+.credits {
+  margin-top: 2em;
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-auto-rows: auto;
+  text-align:right;
+}
+
+.credits strong a{
+  color: black;
+}
+
+.credits strong a:hover{
+  color: gray;
+}
